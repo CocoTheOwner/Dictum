@@ -1,28 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2022-01-23T21:19:56.540Z" agent="5.0 (Windows)" etag="xT-IA0tXJesOhylV2zd4" version="16.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-25T12:05:45.356Z" agent="5.0 (Windows)" etag="Tyf-Zbpv4g1qPEo6YDtt" version="16.4.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="hgHn73dwUc-wctVB-FCh-53" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Commandable&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- name: String&lt;br&gt;- aliases: String[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- permission: String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- parent: Category&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;+ isRoot(): bool&lt;br&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getNames(): String[]&lt;br&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getPermission(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getParent(): String&lt;br&gt;+ getScore(cmd: String): Double&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ isAllowedFor(user: User): bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="310" width="190" height="210" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-53" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Commandable&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- name: String&lt;br&gt;- aliases: String[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- permission: String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- parent: Category&lt;br&gt;- system: Controller&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;+ isRoot(): bool&lt;br&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getNames(): String[]&lt;br&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getPermission(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getParent(): String&lt;br&gt;+ getScore(cmd: String): Double&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ isAllowedFor(user: User): bool&lt;br&gt;+ getSystem(): Controller&lt;br&gt;+ &amp;lt;init&amp;gt;(all fields)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="310" width="190" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-59" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;api::User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ hasPermission(perm: String): bool&lt;br&gt;+ sendMessage(msg: String)&lt;br&gt;+ requestInput(options: String[]): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="590" y="120" width="230" height="110" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-59" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;api::User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ hasPermission(perm: String): bool&lt;br&gt;+ sendMessage(msg: String)&lt;br&gt;+ requestInput(options: String[]): String&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="590" y="110" width="230" height="120" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-63" value="Use" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-62" target="hgHn73dwUc-wctVB-FCh-67" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-62" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Command&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- arguments: Argument[]&lt;br&gt;- method: Method&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getArguments(): Argument[]&lt;br&gt;+ getMethod(): Method&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="80" y="280" width="170" height="130" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-62" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Command&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- arguments: Argument[]&lt;br&gt;- method: Method&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getArguments(): Argument[]&lt;br&gt;+ getMethod(): Method&lt;br&gt;+ &amp;lt;init&amp;gt;(args: Argument[],&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;method: Method)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="80" y="280" width="170" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-67" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Argument&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- parameter: Parameter&lt;br&gt;- aliases: String[]&lt;br&gt;- defaultValue: String&lt;br&gt;- contextual: bool&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getName(): String&lt;br&gt;+ getParameter(): Parameter&lt;br&gt;+ getAliases(): String[]&lt;br&gt;+ getDefaultValue(): String&lt;br&gt;+ isContextual(): String&lt;br&gt;+ isRequired(): bool&lt;br&gt;+ getDefaultAsType(): Object&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="40" width="170" height="230" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-67" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Argument&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- parameter: Parameter&lt;br&gt;- aliases: String[]&lt;br&gt;- defaultValue: String&lt;br&gt;- contextual: bool&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getName(): String&lt;br&gt;+ getParameter(): Parameter&lt;br&gt;+ getAliases(): String[]&lt;br&gt;+ getDefaultValue(): String&lt;br&gt;+ isContextual(): String&lt;br&gt;+ isRequired(): bool&lt;br&gt;+ getDefaultAsType(): Object&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ &amp;lt;init&amp;gt;(all fields)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" width="170" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-71" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Category&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- commands: Command[]&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getCommands(): Command[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="380" y="280" width="190" height="84" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-71" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Category&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- commands: Command[]&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getCommands(): Command[]&lt;br&gt;+ &amp;lt;init&amp;gt;(cmds: Command[], &lt;br&gt;sys: Controller)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="280" width="190" height="110" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-72" value="Child-Parent" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-62" target="hgHn73dwUc-wctVB-FCh-71" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -44,14 +44,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-80" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.879;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.116;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-71" target="hgHn73dwUc-wctVB-FCh-71" edge="1">
+        <mxCell id="hgHn73dwUc-wctVB-FCh-80" value="" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.879;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;startArrow=classic;startFill=1;exitX=0.116;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-71" target="hgHn73dwUc-wctVB-FCh-71" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="400" y="380" as="sourcePoint" />
             <mxPoint x="570" y="420" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="400" y="364" />
-              <mxPoint x="400" y="400" />
-              <mxPoint x="547" y="400" />
+              <mxPoint x="362" y="410" />
+              <mxPoint x="507" y="410" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -65,7 +64,7 @@
             <mxPoint x="23" y="24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-83" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-62" target="hgHn73dwUc-wctVB-FCh-53" edge="1">
+        <mxCell id="hgHn73dwUc-wctVB-FCh-83" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-62" target="hgHn73dwUc-wctVB-FCh-53" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="260" y="270" as="sourcePoint" />
             <mxPoint x="420" y="270" as="targetPoint" />
@@ -77,67 +76,16 @@
             <mxPoint x="367.5" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-121" value="Use" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-85" target="hgHn73dwUc-wctVB-FCh-110" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1020" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-85" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;api::Controller&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- roots: Category[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- runners: Runner[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- runnerMonitor: ScheduledRunner&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- settings: Settings&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ onCommand(command: String,&lt;br&gt; user: User): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ onComplete(command: String, user User):&lt;br&gt;List&amp;lt;String&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ findBestCommand(cmd: String,&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;user: User): Command&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ makeRunner(args: String[],&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;user: User): Runner&lt;br&gt;+ &amp;lt;init&amp;gt;(settingsFile: File, roots: Category[])&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="hgHn73dwUc-wctVB-FCh-85" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;api::Controller&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- roots: Category[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- runners: Runner[]&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- runnerMonitor: ScheduledThreadPoolExecutor&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- settings: Settings&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ onCommand(command: String,&lt;br&gt; user: User): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ onComplete(command: String, user User):&lt;br&gt;List&amp;lt;String&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ findBestCommand(cmd: String,&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;user: User): Command&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ makeRunner(args: String[],&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;user: User): Runner&lt;br&gt;+ &amp;lt;init&amp;gt;(settingsFile: File, roots: Category[])&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="640" y="240" width="250" height="240" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-87" value="run(args: String[], user: User): bool" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="10" y="480" width="270" height="280" as="geometry" />
+          <mxGeometry x="10" y="480" width="300" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-88" value="Start" style="whiteSpace=wrap;html=1;" parent="hgHn73dwUc-wctVB-FCh-87" vertex="1">
-          <mxGeometry x="85" y="40" width="100" height="40" as="geometry" />
+        <mxCell id="ycyEDF2b9w6y2Sx_vNAY-0" value="Convert user input, context and default values&lt;br&gt;to objects which are passed directly to the&lt;br&gt;command function." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="hgHn73dwUc-wctVB-FCh-87">
+          <mxGeometry x="20" y="40" width="260" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-89" value="Task" style="whiteSpace=wrap;html=1;" parent="hgHn73dwUc-wctVB-FCh-87" vertex="1">
-          <mxGeometry x="20" y="130" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-90" value="" style="html=1;curved=1;rounded=0;noEdgeStyle=1;orthogonal=1;" parent="hgHn73dwUc-wctVB-FCh-87" source="hgHn73dwUc-wctVB-FCh-88" target="hgHn73dwUc-wctVB-FCh-89" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="112.5" y="92" />
-              <mxPoint x="70" y="118" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-91" value="Task" style="whiteSpace=wrap;html=1;" parent="hgHn73dwUc-wctVB-FCh-87" vertex="1">
-          <mxGeometry x="150" y="130" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-92" value="" style="html=1;curved=1;rounded=0;noEdgeStyle=1;orthogonal=1;" parent="hgHn73dwUc-wctVB-FCh-87" source="hgHn73dwUc-wctVB-FCh-88" target="hgHn73dwUc-wctVB-FCh-91" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="157.5" y="92" />
-              <mxPoint x="200" y="118" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-93" value="End" style="whiteSpace=wrap;html=1;" parent="hgHn73dwUc-wctVB-FCh-87" vertex="1">
-          <mxGeometry x="85" y="220" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-94" value="" style="html=1;curved=1;rounded=0;noEdgeStyle=1;orthogonal=1;" parent="hgHn73dwUc-wctVB-FCh-87" source="hgHn73dwUc-wctVB-FCh-89" target="hgHn73dwUc-wctVB-FCh-93" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="70" y="182" />
-              <mxPoint x="112.5" y="208" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-95" value="" style="html=1;curved=1;rounded=0;noEdgeStyle=1;orthogonal=1;" parent="hgHn73dwUc-wctVB-FCh-87" source="hgHn73dwUc-wctVB-FCh-91" target="hgHn73dwUc-wctVB-FCh-93" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="200" y="182" />
-              <mxPoint x="157.5" y="208" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-111" value="Use" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;exitX=0.995;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-100" target="hgHn73dwUc-wctVB-FCh-110" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-100" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;api::Settings&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- file: File&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- loader: ScheduledRunner&lt;br&gt;Settings:&lt;br&gt;- msPerSettingsUpdate: long&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- msPerRunnerUpdate: long&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- checkCommands: bool&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getter &amp;amp; setter per settings field&lt;br&gt;+ save(autoLoad: bool)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getLoader()&lt;br&gt;+ getFile()&lt;br&gt;+ static load(file: File): Settings&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="hgHn73dwUc-wctVB-FCh-100" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;api::Settings&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- file: File&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- loader: ScheduledThreadPoolExecutor&lt;br&gt;Settings:&lt;br&gt;- msPerSettingsUpdate: long&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- msPerRunnerUpdate: long&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- checkCommands: bool&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- commandThreadPriority: int&lt;br&gt;- settingsThreadPriority: int&lt;br&gt;- messagingThreadPriority: int&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getter &amp;amp; setter per settings field&lt;br&gt;+ save(autoLoad: bool)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getLoader()&lt;br&gt;+ getFile()&lt;br&gt;+ static load(file: File): Settings&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="640" y="540" width="190" height="210" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-101" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-85" target="hgHn73dwUc-wctVB-FCh-100" edge="1">
@@ -152,16 +100,17 @@
             <mxPoint x="800" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=-0.01;exitY=0.882;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-104" target="hgHn73dwUc-wctVB-FCh-87" edge="1">
+        <mxCell id="hgHn73dwUc-wctVB-FCh-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="hgHn73dwUc-wctVB-FCh-87" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="335" y="537" />
+              <mxPoint x="335" y="550" />
               <mxPoint x="335" y="480" />
             </Array>
+            <mxPoint x="358" y="550" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-104" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Runner extends Thread&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- command: Command&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- messages: Queue&amp;lt;String&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- status: RunnerStatus&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ run(arguments: String[], user: User): bool&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="360" y="440" width="240" height="110" as="geometry" />
+        <mxCell id="hgHn73dwUc-wctVB-FCh-104" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;cmd::Runner extends Thread&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- command: String[]&lt;br&gt;- user: User&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- messages: Queue&amp;lt;String&amp;gt;&lt;br&gt;- static runners: Map&amp;lt;User, List&amp;lt;Runner&amp;gt;&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ run(): bool&lt;br&gt;+ isFinished(): bool&lt;br&gt;+ &amp;lt;init&amp;gt;(cmd: String[], user: User)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="360" y="445" width="240" height="195" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-105" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-85" target="hgHn73dwUc-wctVB-FCh-104" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -169,26 +118,11 @@
             <mxPoint x="580" y="339" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-106" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;cmd::RunnerStatus enum&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ RUNNING&lt;br&gt;+ AWAIT-USER&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ IDLE&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ DONE&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ READY&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="440" y="600" width="160" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-107" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.673;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-104" target="hgHn73dwUc-wctVB-FCh-106" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="620" y="540" as="sourcePoint" />
-            <mxPoint x="610" y="450" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="620" y="550" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=1.003;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-108" target="hgHn73dwUc-wctVB-FCh-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-108" value="Incoming External Command" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="930" y="270" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="hgHn73dwUc-wctVB-FCh-110" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;util::ScheduledRunner extends Thread&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- runnable: Runnable&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- msPerCycle: long&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ setMsPerCycle(mspc: long)&lt;br&gt;+ getMsPerCycle(): long&lt;br&gt;+ setRunnable(runnable: Runnable)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getRunnable(): Runnable&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ stop()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ start()&lt;br&gt;+ runNow()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="910" y="470" width="220" height="180" as="geometry" />
         </mxCell>
         <mxCell id="hgHn73dwUc-wctVB-FCh-117" value="Runs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=1;entryY=0.575;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-116" target="hgHn73dwUc-wctVB-FCh-108" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -210,7 +144,7 @@
             <mxPoint x="900" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_juQD0x1KbfcHXA-X6ip-1" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-85" target="hgHn73dwUc-wctVB-FCh-62">
+        <mxCell id="_juQD0x1KbfcHXA-X6ip-1" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hgHn73dwUc-wctVB-FCh-85" target="hgHn73dwUc-wctVB-FCh-62" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="640" y="450" as="sourcePoint" />
             <mxPoint x="610" y="450" as="targetPoint" />
